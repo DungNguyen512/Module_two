@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item
+            android:id="@+id/menu_search"
+            android:orderInCategory="3"
+            android:title="Search" />
+        <item
+            android:id="@+id/menu_done"
+            android:orderInCategory="2"
+            android:title="Done" />
+        <item
+            android:id="@+id/menu_exit"
+            android:title="Exit" />
+    </group>
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Setting"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_paste"
+                android:title="Paste" />
+            <item
+                android:id="@+id/menu_cut"
+                android:title="Cut" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_contact"
+        android:icon="@drawable/ic_child_care_black_24dp"
+        android:title="Contact"
+        app:showAsAction="always" />
+</menu>
