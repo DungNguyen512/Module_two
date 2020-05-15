@@ -41,9 +41,7 @@ public class ViewPagerFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         ImageView imageView = (ImageView) view.findViewById(R.id.my_image_view);
         Bundle bundle = getArguments();
-        assert bundle != null;
-        int i;
-        i = bundle.getInt("item");
+        int i = bundle.getInt("item");
         imageView.setImageResource(proD[i]);
     }
 
